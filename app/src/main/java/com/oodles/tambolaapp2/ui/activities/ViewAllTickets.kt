@@ -26,7 +26,7 @@ class ViewAllTickets : AppCompatActivity() {
         setContentView(R.layout.activity_view_all_tickets)
 
         getAllTicketsFromServer()
-        // push test.
+        // push test.cjsjncjs
     }
 
     private fun getAllTicketsFromServer() {
