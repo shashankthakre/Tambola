@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_name"
+            app:tint="@color/gray" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border"
+            android:textColorHint="@color/colortexticon"
+            app:hintTextColor="@color/gray">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_name"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="12dp"
+                android:hint="@string/name"
+                android:paddingTop="2dp"
+                android:textColor="@color/colortexticon"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/rounded_border"
+            android:textColorHint="@color/colortexticon"
+            android:layout_marginBottom="20dp"
+
+            app:hintTextColor="@color/gray">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:hint="@string/email"
+                android:paddingTop="2dp"
+                android:textColor="@color/colortexticon" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/rounded_border"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="@color/colortexticon"
+            app:hintTextColor="@color/gray">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="12dp"
+                android:hint="@string/address"
+                android:paddingTop="2dp"
+                android:textColor="@color/colortexticon" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/rounded_border"
+            android:textColorHint="@color/colortexticon"
+            android:layout_marginBottom="20dp"
+            app:hintTextColor="@color/gray">
+
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_city"
+                android:drawableLeft="@drawable/ic_city"
+                android:drawablePadding="12dp"
+                android:hint="@string/city"
+                android:paddingTop="2dp"
+                android:textColor="@color/colortexticon" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_shape"
+            android:text="SAVE"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

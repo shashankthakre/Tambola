@@ -1,0 +1,2 @@
+include ':app', ':otptextview'
+rootProject.name = "Tambola App2"
